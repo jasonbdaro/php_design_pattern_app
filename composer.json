@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "classmap": [
+      "SimUDuck"
+    ]
+  },
+  "require": {
+    "phpunit/phpunit": "5.7.27"
+  }
+}
