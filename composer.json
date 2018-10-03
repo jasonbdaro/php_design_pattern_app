@@ -1,8 +1,8 @@
 {
   "autoload": {
     "classmap": [
-      "SimUDuck",
-      "WeatherStation"
+      "app/SimUDuck",
+      "app/WeatherStation"
     ]
   },
   "require": {
