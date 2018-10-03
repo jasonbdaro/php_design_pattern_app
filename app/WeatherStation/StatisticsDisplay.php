@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: j.daro
+ * User: JASONBDARO
  * Date: 10/3/2018
- * Time: 5:08 PM
+ * Time: 8:35 PM
  */
 
 namespace WeatherStation;
@@ -11,12 +11,12 @@ namespace WeatherStation;
 use WeatherStation\Contracts\Display;
 use WeatherStation\Contracts\Subject;
 
-class CurrentConditions implements Display
+class StatisticsDisplay implements Display
 {
     public function update(Subject $subject)
     {
         // TODO: Implement update() method.
-        echo 'Current Conditions:' . PHP_EOL;
+        echo 'Statistics Display:' . PHP_EOL;
         echo "Temperature: {$subject->getTemperature()}" . PHP_EOL;
         echo "Humidity: {$subject->getHumidity()}" . PHP_EOL;
         echo "Pressure: {$subject->getPressure()}" . PHP_EOL;

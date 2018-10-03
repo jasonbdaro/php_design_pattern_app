@@ -22,4 +22,9 @@ abstract class Subject
             $display->update($this);
         }
     }
+
+    public function getObservers()
+    {
+        return $this->displays;
+    }
 }
