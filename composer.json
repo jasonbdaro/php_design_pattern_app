@@ -2,7 +2,8 @@
   "autoload": {
     "classmap": [
       "app/SimUDuck",
-      "app/WeatherStation"
+      "app/WeatherStation",
+      "app/StarbuzzCoffee"
     ]
   },
   "require": {
