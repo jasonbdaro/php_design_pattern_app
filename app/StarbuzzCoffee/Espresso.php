@@ -9,16 +9,37 @@
 namespace StarbuzzCoffee;
 
 
+use StarbuzzCoffee\Contracts\Beverage;
+
+/**
+ * Class Espresso
+ * @package StarbuzzCoffee
+ */
 class Espresso extends Beverage
 {
-    public function __construct()
+    /**
+     * Espresso constructor.
+     * @param string $size
+     */
+    public function __construct($size = "")
     {
+        $this->setSize($size);
         $this->description = "Espresso Coffee";
     }
 
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @return int|mixed
+     */
     public function cost()
     {
-        $cost = parent::cost();
-        return $cost;
+        return $this->setSizeCharge(30, 35, 40);
     }
 }
