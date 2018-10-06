@@ -4,3 +4,4 @@ Example usages of design patterns I learned from Head First Design Book
 * SimUDuck (`Strategy Pattern`)
 * Weather Station (`Observer Pattern`)
 * Starbuzz Coffee (`Decorator Pattern`)
+* Pizza Store (`Factory Method Pattern`)
