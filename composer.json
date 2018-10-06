@@ -3,7 +3,8 @@
     "classmap": [
       "app/SimUDuck",
       "app/WeatherStation",
-      "app/StarbuzzCoffee"
+      "app/StarbuzzCoffee",
+      "app/PizzaStore"
     ]
   },
   "require": {
