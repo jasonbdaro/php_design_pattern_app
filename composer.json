@@ -4,7 +4,8 @@
       "app/SimUDuck",
       "app/WeatherStation",
       "app/StarbuzzCoffee",
-      "app/PizzaStore"
+      "app/PizzaStore",
+      "app/AbstractPizzaStore"
     ]
   },
   "require": {
