@@ -6,3 +6,4 @@ Example usages of design patterns I learned from Head First Design Book
 * Starbuzz Coffee (`Decorator Pattern`)
 * Pizza Store (`Factory Method Pattern`)
 * Abstract Pizza Store (`Abstract Factory Pattern`)
+* Chocolate Boiler (`Singleton Pattern`)

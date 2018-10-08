@@ -5,7 +5,8 @@
       "app/WeatherStation",
       "app/StarbuzzCoffee",
       "app/PizzaStore",
-      "app/AbstractPizzaStore"
+      "app/AbstractPizzaStore",
+      "app/ChocolateBoiler"
     ]
   },
   "require": {
