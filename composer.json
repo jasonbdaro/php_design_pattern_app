@@ -6,7 +6,8 @@
       "app/StarbuzzCoffee",
       "app/PizzaStore",
       "app/AbstractPizzaStore",
-      "app/ChocolateBoiler"
+      "app/ChocolateBoiler",
+      "app/RemoteCommands"
     ]
   },
   "require": {
