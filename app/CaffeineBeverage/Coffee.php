@@ -32,4 +32,14 @@ class Coffee extends CaffeineBeverage
     {
         echo 'Add sugar and milk' . PHP_EOL;
     }
+
+    /**
+     * The coffee class overrides the hooks method from its parent
+     * In our case, we don't want to add a condiment to a coffee.
+     * @return bool
+     */
+    public function hooks()
+    {
+        return false;
+    }
 }

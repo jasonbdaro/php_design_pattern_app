@@ -14,12 +14,19 @@ namespace CaffeineBeverage\Contracts;
  */
 abstract class CaffeineBeverage
 {
-    public function prepareRecipe()
+    final public function prepareRecipe()
     {
         $this->boilWater();
         $this->brew();
         $this->pourInCup();
-        $this->addCondiments();
+
+        /**
+         * Here we add a hooks to let the subclasses
+         * decide if a customer wants a condiments.
+         */
+        if ($this->hooks()) {
+            $this->addCondiments();
+        }
     }
 
     public function boilWater()
@@ -41,4 +48,14 @@ abstract class CaffeineBeverage
      * @return mixed
      */
     public abstract function addCondiments();
+
+    /**
+     * This hooks method controls the flow of the algorithm
+     * In our case, it adds a condiments
+     * @return bool
+     */
+    public function hooks()
+    {
+        return true;
+    }
 }
