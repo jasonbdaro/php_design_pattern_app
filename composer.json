@@ -7,7 +7,9 @@
       "app/PizzaStore",
       "app/AbstractPizzaStore",
       "app/ChocolateBoiler",
-      "app/RemoteCommands"
+      "app/RemoteCommands",
+      "app/DuckAdapter",
+      "app/HomeTheater"
     ]
   },
   "require": {

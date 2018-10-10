@@ -8,3 +8,5 @@ Example usages of design patterns I learned from Head First Design Book
 * Abstract Pizza Store (`Abstract Factory Pattern`)
 * Chocolate Boiler (`Singleton Pattern`)
 * Remote Control (`Command Pattern`)
+* Duck Adapter (`Adapter Pattern`)
+* Home Theater (`Facade Pattern`)
