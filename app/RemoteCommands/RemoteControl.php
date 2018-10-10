@@ -20,6 +20,7 @@ class RemoteControl
 {
     private $onCommands;
     private $offCommands;
+    private $undoCommand;
 
     /**
      * RemoteControl constructor.
@@ -34,6 +35,7 @@ class RemoteControl
             $this->onCommands[$i] = $noCommand;
             $this->offCommands[$i] = $noCommand;
         }
+        $this->undoCommand = $noCommand;
     }
 
     /**
@@ -52,7 +54,10 @@ class RemoteControl
      */
     public function onButtonWasPushed($slot)
     {
-        $this->onCommands[$slot]->execute();
+        if (null !== $this->onCommands[$slot]) {
+            $this->onCommands[$slot]->execute();
+            $this->undoCommand = $this->onCommands[$slot];
+        }
     }
 
     /**
@@ -60,7 +65,15 @@ class RemoteControl
      */
     public function offButtonWasPushed($slot)
     {
-        $this->offCommands[$slot]->execute();
+        if (null !== $this->offCommands[$slot]) {
+            $this->offCommands[$slot]->execute();
+            $this->undoCommand = $this->offCommands[$slot];
+        }
+    }
+
+    public function undoButtonWasPushed()
+    {
+        $this->undoCommand->undo();
     }
 
     /**

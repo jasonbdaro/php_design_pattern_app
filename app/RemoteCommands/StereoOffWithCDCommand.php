@@ -28,8 +28,21 @@ class StereoOffWithCDCommand implements Command
         $this->stereo = $stereo;
     }
 
+    /**
+     * @return mixed|void
+     */
     public function execute()
     {
         $this->stereo->off();
+    }
+
+    /**
+     * @return mixed|void
+     */
+    public function undo()
+    {
+        $this->stereo->on();
+        $this->stereo->setCd();
+        $this->stereo->setVolume(11);
     }
 }

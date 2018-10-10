@@ -18,4 +18,9 @@ interface Command
      * @return mixed
      */
     public function execute();
+
+    /**
+     * @return mixed
+     */
+    public function undo();
 }

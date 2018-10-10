@@ -35,4 +35,12 @@ class LightOffCommand implements Command
     {
         $this->light->off();
     }
+
+    /**
+     * @return mixed|void
+     */
+    public function undo()
+    {
+        $this->light->on();
+    }
 }

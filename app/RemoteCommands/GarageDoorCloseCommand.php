@@ -28,8 +28,19 @@ class GarageDoorCloseCommand implements Command
         $this->garageDoor = $garageDoor;
     }
 
+    /**
+     * @return mixed|void
+     */
     public function execute()
     {
         $this->garageDoor->down();
+    }
+
+    /**
+     * @return mixed|void
+     */
+    public function undo()
+    {
+        $this->garageDoor->up();
     }
 }

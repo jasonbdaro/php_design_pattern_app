@@ -20,8 +20,10 @@ class NoCommand implements Command
     /**
      * @return mixed|void
      */
-    public function execute()
-    {
-        echo 'No command' . PHP_EOL;
-    }
+    public function execute() {}
+
+    /**
+     * @return mixed|void
+     */
+    public function undo() {}
 }

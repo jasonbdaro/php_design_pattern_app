@@ -34,4 +34,12 @@ class GarageDoorOpenCommand implements Command
     {
         $this->garageDoor->up();
     }
+
+    /**
+     * @return mixed|void
+     */
+    public function undo()
+    {
+        $this->garageDoor->down();
+    }
 }
