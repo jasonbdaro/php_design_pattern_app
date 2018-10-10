@@ -9,7 +9,8 @@
       "app/ChocolateBoiler",
       "app/RemoteCommands",
       "app/DuckAdapter",
-      "app/HomeTheater"
+      "app/HomeTheater",
+      "app/CaffeineBeverage"
     ]
   },
   "require": {

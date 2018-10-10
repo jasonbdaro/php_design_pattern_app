@@ -10,3 +10,4 @@ Example usages of design patterns I learned from Head First Design Book
 * Remote Control (`Command Pattern`)
 * Duck Adapter (`Adapter Pattern`)
 * Home Theater (`Facade Pattern`)
+* Caffeine Beverage (`Template Method Pattern`)
