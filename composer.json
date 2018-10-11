@@ -11,7 +11,8 @@
       "app/DuckAdapter",
       "app/HomeTheater",
       "app/CaffeineBeverage",
-      "app/ObjectvilleMenu"
+      "app/ObjectvilleMenu",
+      "app/ObjectvilleMenuTree"
     ]
   },
   "require": {
