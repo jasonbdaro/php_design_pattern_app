@@ -10,7 +10,8 @@
       "app/RemoteCommands",
       "app/DuckAdapter",
       "app/HomeTheater",
-      "app/CaffeineBeverage"
+      "app/CaffeineBeverage",
+      "app/ObjectvilleMenu"
     ]
   },
   "require": {
