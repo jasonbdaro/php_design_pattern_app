@@ -12,7 +12,8 @@
       "app/HomeTheater",
       "app/CaffeineBeverage",
       "app/ObjectvilleMenu",
-      "app/ObjectvilleMenuTree"
+      "app/ObjectvilleMenuTree",
+      "app/MightyGumball"
     ]
   },
   "require": {
