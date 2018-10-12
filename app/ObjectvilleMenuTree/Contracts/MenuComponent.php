@@ -8,6 +8,8 @@
 
 namespace ObjectvilleMenuTree\Contracts;
 
+use ObjectvilleMenu\DinerMenuIterator;
+
 /**
  * Class MenuComponent
  * @package ObjectvilleMenuTree\Contracts
@@ -76,7 +78,15 @@ abstract class MenuComponent
     /**
      * @throws \Exception
      */
-    public function print()
+    public function printer()
+    {
+        throw new \Exception("Unsupported operation exception.");
+    }
+
+    /**
+     * @throws \Exception
+     */
+    public function getIterator()
     {
         throw new \Exception("Unsupported operation exception.");
     }

@@ -9,6 +9,7 @@
 namespace ObjectvilleMenuTree;
 
 
+use ObjectvilleMenu\DinerMenuIterator;
 use ObjectvilleMenuTree\Contracts\MenuComponent;
 
 /**
@@ -17,7 +18,7 @@ use ObjectvilleMenuTree\Contracts\MenuComponent;
  */
 class Menu extends MenuComponent
 {
-    private $menuComponents;
+    private $menuComponents = [];
     private $name;
     private $description;
 
@@ -69,10 +70,27 @@ class Menu extends MenuComponent
         return $this->description;
     }
 
-    public function print()
+    /**
+     * @return DinerMenuIterator
+     */
+    public function getIterator()
+    {
+        return new DinerMenuIterator($this->menuComponents);
+    }
+
+    /**
+     * @throws \Exception
+     */
+    public function printer()
     {
         echo PHP_EOL . $this->getName();
-        echo ", " . $this->getDescription();
-        echo "--------------";
+        echo ", " . $this->getDescription() . PHP_EOL;
+        echo "----------------------------------" . PHP_EOL;
+
+        $iterator = $this->getIterator();
+        while ($iterator->hasNext()) {
+            $menuItem = $iterator->next();
+            $menuItem->printer();
+        }
     }
 }

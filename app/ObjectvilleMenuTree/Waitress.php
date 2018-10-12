@@ -17,7 +17,7 @@ use ObjectvilleMenuTree\Contracts\MenuComponent;
  */
 class Waitress
 {
-    private $menuComponent;
+    protected $menuComponent;
 
     /**
      * Waitress constructor.
@@ -28,8 +28,11 @@ class Waitress
         $this->menuComponent = $menuComponent;
     }
 
+    /**
+     * @throws \Exception
+     */
     public function printMenu()
     {
-        $this->menuComponent->print();
+        $this->menuComponent->printer();
     }
 }

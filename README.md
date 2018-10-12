@@ -12,3 +12,4 @@ Example usages of design patterns I learned from Head First Design Book
 * Home Theater (`Facade Pattern`)
 * Caffeine Beverage (`Template Method Pattern`
 * Objectville Menu (`Iterator Pattern`)
+* Objectville Menu Tree (`Composite Pattern`)

@@ -69,13 +69,13 @@ class MenuItem extends MenuComponent
         return $this->price;
     }
 
-    public function print()
+    public function printer()
     {
-        echo " " . $this->getName();
+        echo " > " . $this->getName();
         if ($this->isVegetarian()) {
             echo "(v)";
         }
         echo ", " . $this->getPrice();
-        echo "   -- " . $this->getDescription();
+        echo chr(9) . "-- " . $this->getDescription() . PHP_EOL;
     }
 }
