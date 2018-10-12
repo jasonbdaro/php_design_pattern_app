@@ -13,3 +13,4 @@ Example usages of design patterns I learned from Head First Design Book
 * Caffeine Beverage (`Template Method Pattern`
 * Objectville Menu (`Iterator Pattern`)
 * Objectville Menu Tree (`Composite Pattern`)
+* Mighty Gumball (`State Pattern`)
