@@ -59,4 +59,12 @@ class SoldOutState implements State
     {
         echo "No gumball dispensed" . PHP_EOL;
     }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return "Sold out" . PHP_EOL;
+    }
 }

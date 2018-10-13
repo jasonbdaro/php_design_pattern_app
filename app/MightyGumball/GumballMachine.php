@@ -24,13 +24,16 @@ class GumballMachine
     private $winner;
     private $state;
     private $count = 0;
+    private $location;
 
     /**
      * GumballMachine constructor.
+     * @param $location
      * @param $count
      */
-    public function __construct($count)
+    public function __construct($location, $count)
     {
+        $this->location = $location;
         $this->soldOut = new SoldOutState($this);
         $this->noQuarter = new NoQuarterState($this);
         $this->hasQuarter = new HasQuarterState($this);
@@ -55,6 +58,7 @@ class GumballMachine
     public function turnCrank()
     {
         $this->state->turnCrank();
+        $this->state->dispense();
     }
 
     /**
@@ -119,5 +123,15 @@ class GumballMachine
     public function getCount()
     {
         return $this->count;
+    }
+
+    public function getState()
+    {
+        return $this->state;
+    }
+
+    public function getLocation()
+    {
+        return $this->location;
     }
 }

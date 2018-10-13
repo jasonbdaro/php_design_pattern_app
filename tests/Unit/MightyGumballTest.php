@@ -10,6 +10,7 @@ namespace tests\Unit;
 
 
 use MightyGumball\GumballMachine;
+use MightyGumball\GumballMonitor;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -20,11 +21,19 @@ class MightyGumballTest extends TestCase
 {
     public function testGumball()
     {
-        $gumballMachine = new GumballMachine(5);
+        $gumballMachine = new GumballMachine("Objectville", 5);
         $gumballMachine->insertQuarter();
         $gumballMachine->turnCrank();
         $gumballMachine->insertQuarter();
-        $gumballMachine->ejectQuarter();
         $gumballMachine->turnCrank();
+        $gumballMachine->insertQuarter();
+        $gumballMachine->turnCrank();
+        $gumballMachine->insertQuarter();
+        $gumballMachine->turnCrank();
+
+        echo PHP_EOL;
+
+        $gumballMonitor = new GumballMonitor($gumballMachine);
+        $gumballMonitor->report();
     }
 }

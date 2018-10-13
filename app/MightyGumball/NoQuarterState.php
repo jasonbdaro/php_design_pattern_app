@@ -62,4 +62,12 @@ class NoQuarterState implements State
     {
         echo "You need to pay first" . PHP_EOL;
     }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return "No quarter" . PHP_EOL;
+    }
 }

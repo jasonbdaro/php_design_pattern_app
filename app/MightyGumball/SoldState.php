@@ -65,4 +65,12 @@ class SoldState implements State
             $this->gumballMachine->setState($this->gumballMachine->getSoldOutState());
         }
     }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return "Sold" . PHP_EOL;
+    }
 }
